@@ -44,7 +44,7 @@ export default function BreweryList() {
         <button type='submit' style={{marginLeft: '5px'}}>Search</button>
         <button type='reset' onClick={reset} style={{marginLeft: '5px'}}>Reset</button>
       </form>
-      <ol>
+      <ol style={{marginLeft: '-25px'}}>
         {
           breweries.map(e => 
             <li key={e.id}>

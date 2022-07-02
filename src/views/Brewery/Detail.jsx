@@ -27,8 +27,7 @@ export default function BreweryDetail() {
         brewery ? <div>
           <h1>Id: {id}</h1>
           <p>{brewery.name}</p>
-          <p>{brewery.city}, {brewery.state}</p>
-          <p>{brewery.country}</p>
+          <p>{brewery.city}, {brewery.state}, {brewery.country}</p>
           <p>{brewery.phone}</p>
           {(brewery.website_url) && (
             <p>
@@ -36,8 +35,8 @@ export default function BreweryDetail() {
             </p>
           )}
         </div> : <h6> {errMsg} </h6>
-      }      
-      <Link to='/breweries' style={{display: 'block', marginTop: '10px'}}>Back to Breweries</Link>
+      }
+      <Link to='/breweries' style={{display: 'block', marginTop: '15px', fontWeight: '700'}}>Back to Breweries</Link>
       { isLoading && <Loading />}
     </main>
   );
